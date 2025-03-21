@@ -1,0 +1,17 @@
+<template>
+    
+    <header class="slds-modal__header">
+      
+      <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Submit for Approval</h2>
+   </header>
+   <lightning-card>
+    <lightning-textarea label="Comments" value={comments} onchange={onchangecomments} class="slds-p-around_medium"></lightning-textarea>    
+  </lightning-card>
+  <footer class="slds-modal__footer">
+    <div style="text-align: right;padding-right:1.5%;">
+      
+      <lightning-button variant="Brand" label="Submit" title="Primary action" onclick={handleSubmit} class="slds-m-left_x-small"></lightning-button>
+      </div>
+ </footer>
+  
+</template>
